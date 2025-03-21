@@ -1,0 +1,296 @@
+:root{
+    --background-gray: rgb(38, 38, 41);
+}
+
+body{
+   margin: 0;
+   background-color: darkgray;
+}
+
+header{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-bottom: 2px solid red;
+    height: 64px;
+}
+
+.search-form{
+    display: flex;
+    align-items: center;
+    padding: 20;
+    
+}
+
+.dnd-logo{
+    flex-direction: column;
+    font-size: 27px;
+    font-weight: 800;
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    line-height: 18px;
+}
+
+.search-button{
+    display: flex;
+    width: 40px;
+}
+
+.red{
+    font-size: 14px;
+    color: red;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.sitebar-container{
+    display: flex;
+    width: 1200px;
+}
+
+.site-interactions-groups{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.site-interactions-group-search{
+    flex-grow: 1;
+}
+
+.site-interactions-search{
+    display: flex;
+}
+
+.search-input{
+    display: flex;
+    background: black;
+    color: white;
+    border: none;
+    font-size: 18px;
+    margin: 0 20px;
+}
+
+.search-input:focus{
+    outline: 0px;
+}
+
+.search-logo{
+    width: 40px;
+}
+
+.social-network-list{
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 20px; 
+}
+
+.social-network-logo{
+    width: 18px;
+}
+
+.social-network-item{
+    display: flex;  
+    margin-left: 20px;
+    width: 18px;
+    height: 18px;
+}
+
+.site-interactions-user{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.user-interactions-quick{
+    justify-content: center;
+}
+
+.user-interactions-list{
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.user-interactions-item{
+    display: flex;  
+    margin-left: 20px;
+    width: 18px;
+    height: 18px;
+}
+
+.user-interactions-profile{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    border-left: 1px solid var(--background-gray);
+    height: 64px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.user-profile-previw{
+    display: flex;
+    align-items: center;
+    
+}
+
+.nickname{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.profile-picture{
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    background-color: aqua;
+}
+
+.site-interactions-group-user{
+    border-left: 1px solid var(--background-gray);
+}
+
+nav{
+    display: flex; 
+    height: 56px;
+    justify-content: center;
+    background-color: rgb(38, 40, 42);
+}
+
+.navbar-container{
+    box-sizing: border-box;
+    padding: 0 16px;
+    display: flex;
+    color: white;
+    width: 1200px;
+}
+
+.navbar-container li{
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.caret-down{
+    width: 10px;
+    margin-left: 4px;
+}
+
+
+.footer-main-container{
+    display: flex;
+    width: 1200px;
+    border:2px solid lime;
+}
+.footer-main{
+    display: flex;
+    background-color: rgb(38, 40, 42);
+    justify-content: center;
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 14px 48px 16px;
+}
+
+.footer-bottom-link{
+    display: flex;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+    padding: 6px;
+}
+.esrb-logo{
+    display: inline-block;
+    width: 42px;
+    height: 56px;
+    background-color: white;
+    border: 2px solid slateblue;
+}
+
+.narrow-header{
+    display: flex;
+    height: 46px;
+    background-color: rgb(18,18,18);
+    border-top: 1px solid rgb(35, 35, 35);
+    justify-content: flex-start;
+    position: fixed;
+    width: 100%;
+}
+
+.narrow-header-container{
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+.burger-menu{
+    width: 46px;
+    border-left: 1px solid gray;
+}
+
+.search-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+}
+
+.burger-menu-image{
+    width: 20px;
+}
+
+.interactions-compact{
+    display: flex;
+    height: 100%;
+    align-items: stretch;
+    border-left: 1px solid gray;
+}
+
+@media (min-width: 1024px){
+    .narrow-header{
+        display: none;
+    }
+}
+
+@media (max-width:1200px){
+    .sitebar-container{
+        flex-shrink: 1;
+    }
+    
+    .navbar-container{
+        flex-shrink: 1;
+    }
+}
+
+@media (max-width: 1024px){
+    .large-header{display: none;}
+    
+    .home{
+        padding-top: 50px;
+    }
+
+    .search-button-image{
+        width: 20px;
+        height: 20px;
+    }
+}
+
